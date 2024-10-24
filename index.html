@@ -9,7 +9,7 @@
 <body>
     <h2>Application & Selection Process Flowchart</h2>
     <svg id="flowchartSVG" width="800" height="700">
-        <!-- [Your existing SVG code] -->
+        <!-- Your existing SVG code goes here -->
     </svg>
     <button id="downloadButton">Download as GIF</button>
     <a href="index.html">Back to Home</a>
@@ -32,7 +32,6 @@
             
             img.onload = function() {
                 ctx.drawImage(img, 0, 0);
-                // Convert the canvas to a data URL and create a GIF
                 const gifDataUrl = canvas.toDataURL('image/gif');
                 const a = document.createElement('a');
                 a.href = gifDataUrl;
