@@ -18,21 +18,35 @@
         <text x="400" y="180" font-family="Arial" font-size="16" text-anchor="middle" fill="#fff">Submit Application</text>
 
         <!-- Review Application -->
-        <polygon points="300,250 500,250 460,300 340,300" fill="#FF9800" stroke="#000" stroke-width="2"/>
+        <rect x="300" y="250" width="200" height="50" fill="#FF9800" stroke="#000" stroke-width="2" rx="15" ry="15"/>
         <text x="400" y="280" font-family="Arial" font-size="16" text-anchor="middle" fill="#fff">Review Application</text>
 
         <!-- Interview -->
         <rect x="300" y="350" width="200" height="50" fill="#FFC107" stroke="#000" stroke-width="2" rx="15" ry="15"/>
-        <text x="400" y="380" font-family="Arial" font-size="16" text-anchor="middle" fill="#000">Interview</text>
+        <text x="400" y="380" font-family="Arial" font-size="16" text-anchor="middle" fill="#000">Conduct Interview</text>
 
         <!-- Offer -->
-        <ellipse cx="400" cy="480" rx="80" ry="30" fill="#FF5722" stroke="#000" stroke-width="2"/>
-        <text x="400" y="485" font-family="Arial" font-size="16" text-anchor="middle" fill="#fff">Offer</text>
+        <rect x="300" y="450" width="200" height="50" fill="#FF5722" stroke="#000" stroke-width="2" rx="15" ry="15"/>
+        <text x="400" y="480" font-family="Arial" font-size="16" text-anchor="middle" fill="#fff">Make Offer</text>
 
         <!-- End -->
-        <rect x="300" y="550" width="200" height="50" fill="#F44336" stroke="#000" stroke-width="2" rx="15" ry="15"/>
-        <text x="400" y="580" font-family="Arial" font-size="16" text-anchor="middle" fill="#fff">End</text>
+        <ellipse cx="400" cy="550" rx="80" ry="30" fill="#F44336" stroke="#000" stroke-width="2"/>
+        <text x="400" y="555" font-family="Arial" font-size="16" text-anchor="middle" fill="#fff">End</text>
 
         <!-- Arrows -->
         <line x1="400" y1="80" x2="400" y2="150" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
-   
+        <line x1="400" y1="200" x2="400" y2="250" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <line x1="400" y1="300" x2="400" y2="350" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <line x1="400" y1="400" x2="400" y2="450" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <line x1="400" y1="500" x2="400" y2="550" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+        <!-- Arrowhead Definition -->
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+            </marker>
+        </defs>
+    </svg>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
