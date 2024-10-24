@@ -8,8 +8,34 @@
 </head>
 <body>
     <h2>Internship Execution Flowchart</h2>
-    <canvas id="internshipFlowchartCanvas" width="800" height="600"></canvas>
-    <script src="flowchart2.js"></script>
+    <svg id="internshipFlowchartSVG" width="800" height="600">
+        <rect x="300" y="50" width="200" height="50" fill="#4CAF50" stroke="#000" stroke-width="2"/>
+        <text x="400" y="80" font-family="Arial" font-size="16" text-anchor="middle" fill="#fff">Start</text>
+
+        <rect x="300" y="150" width="200" height="50" fill="#2196F3" stroke="#000" stroke-width="2"/>
+        <text x="400" y="180" font-family="Arial" font-size="16" text-anchor="middle" fill="#fff">Intern Training</text>
+
+        <rect x="300" y="250" width="200" height="50" fill="#FF9800" stroke="#000" stroke-width="2"/>
+        <text x="400" y="280" font-family="Arial" font-size="16" text-anchor="middle" fill="#fff">Assign Tasks</text>
+
+        <rect x="300" y="350" width="200" height="50" fill="#FFC107" stroke="#000" stroke-width="2"/>
+        <text x="400" y="380" font-family="Arial" font-size="16" text-anchor="middle" fill="#000">Review Progress</text>
+
+        <rect x="300" y="450" width="200" height="50" fill="#F44336" stroke="#000" stroke-width="2"/>
+        <text x="400" y="480" font-family="Arial" font-size="16" text-anchor="middle" fill="#fff">End</text>
+
+        <!-- Arrows -->
+        <line x1="400" y1="100" x2="400" y2="150" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <line x1="400" y1="200" x2="400" y2="250" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <line x1="400" y1="300" x2="400" y2="350" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+        <!-- Arrowhead Definition -->
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+            </marker>
+        </defs>
+    </svg>
     <a href="index.html">Back to Home</a>
 </body>
 </html>
