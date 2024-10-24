@@ -4,51 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application & Selection Process Flowchart</title>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        // Load the Google Charts library
-        google.charts.load('current', { packages: ["orgchart"] });
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart() {
-            var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Node');
-            data.addColumn('string', 'Parent');
-
-            // Define the flowchart structure
-            data.addRows([
-                [{ v: 'Start', f: 'Start'}, ''],
-                ['Application Submission', 'Start'],
-                ['Screening', 'Application Submission'],
-                ['Interview', 'Screening'],
-                ['Final Selection & Offer', 'Interview'],
-                ['End', 'Final Selection & Offer']
-            ]);
-
-            // Create the chart
-            var chart = new google.visualization.OrgChart(document.getElementById('flowchart_div'));
-            chart.draw(data, { allowHtml: true });
-        }
-    </script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        #flowchart_div {
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Div to hold the flowchart -->
-    <div id="flowchart_div"></div>
+    <h2>Application & Selection Process Flowchart</h2>
+    <canvas id="flowchartCanvas" width="800" height="600"></canvas>
+    <script src="flowchart1.js"></script>
+    <a href="index.html">Back to Home</a>
 </body>
 </html>
